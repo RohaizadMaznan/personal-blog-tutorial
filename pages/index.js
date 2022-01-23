@@ -8,13 +8,6 @@ import client from "../graphqlClient";
 import { useEffect } from "react";
 
 export default function Home({ blogs }) {
-  useEffect(() => {
-    // Make sure the server-side is loaded
-    if (blogs) {
-      console.log("Web is ready 🤩");
-    }
-  }, []);
-
   return (
     <div>
       <Head>

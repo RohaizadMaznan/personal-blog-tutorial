@@ -6,6 +6,7 @@ import { gql } from "graphql-request";
 import client from "../../graphqlClient";
 import { RichText } from "@graphcms/rich-text-react-renderer";
 import getFormattedDate from "../../utils/dateFormat";
+import Image from "next/image";
 
 export default function Index({ blog }) {
   return (
@@ -27,13 +28,19 @@ export default function Index({ blog }) {
             {blog.title}
           </h1>
 
-          <div className="bg-gray-100 overflow-hidden rounded-lg shadow-lg relative mb-6 md:mb-8">
-            <img
-              src={blog.image.url}
+          <div className="bg-gray-100 w-full h-[400px] overflow-hidden rounded-lg shadow-lg relative mb-6 md:mb-8">
+            {/* <img
               loading="lazy"
-              alt={"Image -" + blog.title}
               className="w-full h-full object-cover object-center"
-            />
+            /> */}
+            <div className="w-full h-full relative">
+              <Image
+                src={blog.image.url}
+                alt={"Image -" + blog.title}
+                layout="fill"
+                className="object-cover object-center"
+              />
+            </div>
           </div>
 
           <div className="flex justify-end text-gray-500 sm:text-sm mb-6 md:mb-8">
