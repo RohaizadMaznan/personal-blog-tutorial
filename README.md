@@ -23,4 +23,4 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
 # Personal-blog-tutorial Deployed on Vercel
-You can view the live demo at [http://localhost:3000](http://localhost:3000)
+You can view the live demo at [LIVE DEMO](https://personal-blog-tutorial.vercel.app/)
