@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 function Footer() {
@@ -109,7 +110,7 @@ function Footer() {
         </div>
 
         <div className="text-gray-400 text-sm text-center py-8">
-          © 2021 - Present Flowrift. All rights reserved.
+          © 2022 - <Link href="https://rohaizadmaznan.com/">Rohaizad Maznan</Link>. All rights reserved.
         </div>
       </footer>
     </div>
